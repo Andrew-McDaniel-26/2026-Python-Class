@@ -1,46 +1,21 @@
 
 
 import turtle 
-#Andrew McDaniel, Python Class Lab 2, 09/03/26, this program draws a flower with a stem using turtle graphics
+#Andrew McDaniel, Python Class Lab 2, 09/01/26, this program draws a flower with a stem using turtle graphics
 
 #this is the function that draws the flower and stem
 def drawflower(myTurtle, petalLength, stemLength):
+	# sets the color of the flower petals to green and the fill color to blue
 	myTurtle.color("green", "blue")
-	myTurtle.begin_fill()
-	myTurtle.circle(petalLength, 60)
-	myTurtle.left(120)
-	myTurtle.circle(petalLength, 60)
-	myTurtle.end_fill()
-	myTurtle.left(60)
-	myTurtle.begin_fill()
-	myTurtle.circle(petalLength, 60)
-	myTurtle.left(120)
-	myTurtle.circle(petalLength, 60)
-	myTurtle.end_fill()
-	myTurtle.left(60)
-	myTurtle.begin_fill()
-	myTurtle.circle(petalLength, 60)
-	myTurtle.left(120)
-	myTurtle.circle(petalLength, 60)
-	myTurtle.end_fill()
-	myTurtle.left(60)
-	myTurtle.begin_fill()
-	myTurtle.circle(petalLength, 60)
-	myTurtle.left(120)
-	myTurtle.circle(petalLength, 60)
-	myTurtle.end_fill()
-	myTurtle.left(60)
-	myTurtle.begin_fill()
-	myTurtle.circle(petalLength, 60)
-	myTurtle.left(120)
-	myTurtle.circle(petalLength, 60)
-	myTurtle.end_fill()
-	myTurtle.left(60)
-	myTurtle.begin_fill()
-	myTurtle.circle(petalLength, 60)
-	myTurtle.left(120)
-	myTurtle.circle(petalLength, 60)
-	myTurtle.end_fill()
+	# draws 6 flower petals
+	for i in range(6):
+		myTurtle.begin_fill()
+		myTurtle.circle(petalLength, 60)
+		myTurtle.left(120)
+		myTurtle.circle(petalLength, 60)
+		myTurtle.end_fill()
+		myTurtle.left(60)
+	#draws the stem
 	myTurtle.right(54)
 	myTurtle.forward(stemLength)
 

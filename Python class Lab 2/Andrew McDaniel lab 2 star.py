@@ -1,5 +1,5 @@
 import turtle
-#Andrew McDaniel, Python Class Lab 2, 09/03/26, this program draws a star using turtle graphics
+#Andrew McDaniel, Python Class Lab 2, 09/01/26, this program draws a star using turtle graphics
 
 #this is the function that draws the star
 def drawstar(myTurtle, sideLength):
